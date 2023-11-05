@@ -54,6 +54,11 @@ const displayChampion = () => {
                             key= {item.id}>
                                 <div>Edit</div>
                             </Link>
+                            <Link
+                            to={`/champinfo/${item.id}`}
+                            key= {item.id}>
+                                <div>More Info!</div>
+                            </Link>
                         </div>
                     </>
                 )

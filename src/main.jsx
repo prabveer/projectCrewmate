@@ -7,6 +7,7 @@ import Layout from './routes/Layout.jsx';
 import CreateChampion from './routes/createChampion.jsx'
 import ViewChampion from './routes/viewChampions.jsx'
 import UpdateChamp from './routes/updateChamp.jsx';
+import InfoChamp from './routes/infoChamp.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index={false} path="/CreateChampion" element={<CreateChampion />} />
           <Route index={false} path="/ViewChampion" element={<ViewChampion />} />
           <Route index={false} path="/champdetail/:id" element={<UpdateChamp />} />
+          <Route index={false} path="/champinfo/:id" element={<InfoChamp />} />
         </Route>
       </Routes>
     </BrowserRouter>
